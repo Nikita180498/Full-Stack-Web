@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        h1{
+            padding-top: 10px;
+        }
+        form{
+           
+            background-color:whitesmoke;
+            width:50%; 
+            margin-left: 300px;
+            padding-left: 20px;
+        }
+
+        .div1{
+            border:1px solid black;
+            padding:10px;
+            width:80%;
+        }
+         textarea{
+             width: 300px;
+             height: 100px;
+        }
+
+        .div2{
+            border:1px solid black;
+            padding:10px;
+            width:80%;
+        }
+        input{
+            margin-left: 50px;
+        }
+        label{
+            font-size: 20px;
+        }
+        button{
+            font-size: 20px;
+        }
+        legend{
+            font-size: 20px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Registration Form</h1>
+        <div class="div1">
+
+            <label>First Name </label>
+            <input type="text" name="firstname"><br><br>
+
+            <label>Last Name </label>
+            <input type="text" name="lastname"><br><br>
+
+            <label>Date Of  Birth </label>
+            <input type="date" name="date"><br><br>
+
+            <label>Gender </label>
+            <input type="radio" name="gender"><label>Male</label>
+            <input type="radio" name="gender"><label>Female</label><br><br>
+
+            <label>Country</label>
+            <input type="text" list="cities">
+            <datalist id="cities">
+                <option value="Solapur">Solapur</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Nagpur">Nagpur</option>
+            </datalist><br><br>
+
+            <label>Email </label>
+            <input type="email" name="email"><br><br>
+
+            <label>Password </label>
+            <input type="password" name="password"><br><br>
+
+            <label>Comments </label><br>
+            <textarea></textarea><br><br>
+
+         <input type="checkbox"><label>I agree to the terms and conditions</label> <br><br>
+
+         <button type="submit">Submit</button>
+         <button type="cancel">Cancel</button>
+        </div>
+    
+    <div class="div2">
+        <fieldset>
+            <legend>Choose your favourite color:</legend>
+            <input type="radio" name="color"><label>Red</label>
+            <input type="radio" name="color"><label>Yellow</label>
+        </fieldset>
+        
+    </div>
+</form>
+</body>
+</html>
