@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            margin-left:400px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: whitesmoke;
+            width: 600px;
+            height: 500px;
+        }
+
+
+        tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: whitesmoke;
+            font-size: 20px;
+          
+        }
+        th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: gray;
+            font-size: 30px;
+        }
+        .div1{
+            text-align: center;
+
+        }
+
+        h1{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+    <h1>Seminar Timetable</h1>
+    <table>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+        <td rowspan="2">Monday</td>
+        <td rowspan="2">8:00 a.m.</td>
+        <td rowspan="2">5:00 p.m.</td>
+        <td>Introduction to HTML</td>
+         </tr>
+
+         <tr>
+             <td>Type of elements
+                 <ul>
+                     <li>Block level</li>
+                     <li>Inline</li>
+                 </ul>
+             </td>
+         </tr>
+
+         <tr>
+             <td rowspan="3">Tuesday</td>
+             <td>8:00 a.m.</td>
+             <td>11:00 a.m.</td>
+             <td rowspan="2">CSS Selectors</td>
+         </tr>
+         <tr>
+             <td>11:00 a.m.</td>
+             <td>2:00 p.m.</td>
+         </tr>
+         <tr>
+             <td>2:00 p.m.</td>
+             <td>5:00 p.m.</td>
+             <td>Tables and List Tag</td>
+         </tr>
+         <tr>
+             <td>Wednesday</td>
+             <td>8:00 a.m.</td>
+             <td>12:00 p.m.</td>
+             <td>CSS Box Model</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
