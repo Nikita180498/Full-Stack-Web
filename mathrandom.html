@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathRandom</title>
+</head>
+<body>
+    <h1>Math Random</h1>
+    <div id="display" ></div>
+    <button onclick="text()">addText</button>
+    <script>
+        var displaytext=['Failure will never Overtake me.If my Determination to succeed is strong enough',
+                            'Don\'t Let Yesterday Take up too much of today',
+                            'If u r working on something,that you really care about .You don\'t have to pushed.The vision pulls you']
+        function text(){
+            var randomtext = Math.floor(Math.random()* (displaytext.length));
+            document.getElementById("display").innerHTML= displaytext[randomtext];
+        }
+    </script>
+</body>
+</html>
