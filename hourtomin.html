@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hour to Minutes</title>
+</head>
+<body>
+    <script type="text/Javascript">
+ 
+    //1.how to get format date and time from mill seconds in javascript 
+        var dt = new Date();
+         var sec = dt.getSeconds();
+         console.log("Seconds: " + sec);
+         var min = dt.getMinutes();
+         console.log("<br>Minutes: " + min);
+         var hrs = dt.getHours();
+         console.log("<br>Hours: " + hrs);
+         var total_seconds = (hrs*3600) + (min*60) + sec;
+         console.log("<br>Total seconds: " + total_seconds) ;
+
+         console.log("\n");
+
+    // 2. Convert Hours to Minutes
+        function converthourstomins(hours)
+        {
+            return Math.floor(hours * 60);
+        }
+        var minutes = converthourstomins(6);
+        console.log("Javascript converting hours to minutes :-" + minutes);
+
+        console.log("\n");
+        
+        // 3.Convert Hours to Second
+        function converthourstoseconds(hours){
+            return Math.floor(hours * 60 * 60);
+        }
+        var hourstosecond = converthourstoseconds(2);
+        console.log("javascript converting hours to second :=" + hourstosecond);
+
+        console.log("\n");
+
+        // 4. Convert Minutes to Second
+        function convertminutestoseconds(minutes){
+            return Math.floor(minutes * 60)
+        }
+        var minutestosecond = convertminutestoseconds(2);
+        console.log("javascript converting Minutes to seconds :-" + minutestosecond);
+
+        
+
+        
+    </script>
+    
+</body>
+</html>
